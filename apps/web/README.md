@@ -163,6 +163,7 @@ The application uses Next.js App Router. Routes inside the `(app)` route group s
 | `/rules`                  | [`app/(app)/rules/page.tsx`](<app/(app)/rules/page.tsx>)                                   | Static          | Alert rule editor and syntax validator for custom Watchdog alerts.                          |
 | `/playground`             | [`app/(app)/playground/page.tsx`](<app/(app)/playground/page.tsx>)                         | Static          | Interactive OpenAPI REST API explorer and request tester.                                   |
 | `/settings`               | [`app/(app)/settings/page.tsx`](<app/(app)/settings/page.tsx>)                             | Static          | App settings: network selection (Testnet/Mainnet), API endpoints, API keys, and theme.      |
+| `/search`                 | [`app/(app)/search/page.tsx`](<app/(app)/search/page.tsx>)                                 | Dynamic         | Search across contracts, human-readable labels, and transaction traces following network.   |
 | `/status`                 | [`app/(app)/status/page.tsx`](<app/(app)/status/page.tsx>)                                 | Static          | System status page displaying indexer sync lag and backend availability.                    |
 | `/offline-alerts`         | [`app/offline-alerts/page.tsx`](app/offline-alerts/page.tsx)                               | Static          | Offline alert viewer displaying alerts cached in IndexedDB when disconnected.               |
 
@@ -303,6 +304,7 @@ apps/web/
 │   │   ├── live/         # Real-time SSE telemetry dashboard
 │   │   ├── playground/   # OpenAPI REST API testing playground
 │   │   ├── rules/        # Watchdog alert rules editor
+│   │   ├── search/       # Global search across contracts, labels, and traces
 │   │   ├── settings/     # App configuration, API keys, network selector
 │   │   ├── status/       # Indexer status and lag indicators
 │   │   ├── watchdog/     # Watchdog contract monitor, SLA reports, notification config
